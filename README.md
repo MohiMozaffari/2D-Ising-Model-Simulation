@@ -23,39 +23,27 @@ python ising_model_simulation.py
 ## Code Structure
 The code consists of the following main parts:
 
-initial_state(N): Initializes the lattice with random spins.
-
-hamiltonian(r, c, lattice, N): Calculates the Hamiltonian of a spin.
-
-checkflip(r, c, lattice, T, N): Checks if a spin should flip based on the Metropolis algorithm.
-
-magnetization(lattice): Calculates the magnetization of the lattice.
-
-energy(lattice): Calculates the total energy of the lattice.
-
-montecarlo(lattice, T, eqsteps): Performs Monte Carlo moves using the Metropolis algorithm.
+* initial_state(N): Initializes the lattice with random spins.
+* hamiltonian(r, c, lattice, N): Calculates the Hamiltonian of a spin.
+* checkflip(r, c, lattice, T, N): Checks if a spin should flip based on the Metropolis algorithm.
+* magnetization(lattice): Calculates the magnetization of the lattice.
+* energy(lattice): Calculates the total energy of the lattice.
+* montecarlo(lattice, T, eqsteps): Performs Monte Carlo moves using the Metropolis algorithm.
 
 ## Parameters
-N: Size of the lattice.
-
-nt: Number of temperature points.
-
-eqSteps: Number of Monte Carlo moves for equilibration.
-
-mcSteps: Number of Monte Carlo moves for calculation.
-
-T: Array of temperature points.
+* N: Size of the lattice.
+* nt: Number of temperature points.
+* eqSteps: Number of Monte Carlo moves for equilibration.
+* mcSteps: Number of Monte Carlo moves for calculation.
+* T: Array of temperature points.
 
 ## Visualization
 The simulation results are visualized using Matplotlib. The plots include:
 
-Average magnetization per spin vs. temperature.
-
-Average energy per spin vs. temperature.
-
-Specific heat vs. temperature.
-
-Magnetic susceptibility vs. temperature.
+1. Average magnetization per spin vs. temperature.
+2. Average energy per spin vs. temperature.
+3. Specific heat vs. temperature.
+4. Magnetic susceptibility vs. temperature.
 
 Additionally, the critical exponents of the Ising model are calculated and plotted.
 
